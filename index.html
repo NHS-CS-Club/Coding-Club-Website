@@ -1,50 +1,132 @@
 <!DOCTYPE html>
 <!--GameHunter101: Lior-->
-<!--Kujira: Theo-->
+<!--Maimunaki: Theo-->
 <!--SciDev5: Joey-->
 <!-- Tinytinfoil: Venkadesh -->
 <!--XxSierra117xX: Nick-->
 <!--Aapuji: Om-->
+
 <html lang="eng" dir="ltr">
     <head>
         <title>NHS Coding Club | Home</title>
         <meta charset="utf-8">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Recursive&family=Roboto+Mono&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=');
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+            
+            h1, h2, h3, h4, h5, h6 {
+                font-family: "Raleway", sans-serif;
+                
+            }
+            :root{
+                --default-text-color: #d3d3d3;
+                --default-bg-color: #282a2e;
+                --link-color: #4376e6;
+                --clicked-link-color: #453fa0;
+            }
+
+            nav ul {
+                font-family: Arial/*Whatev you want*/;
+                padding: 0;
+                font-weight: bold;
+                float: left;
+                
+            }
+
+            ul.horizontal-list > li > a {
+                display: inline;
+                margin-right: 20px;
+            }
+            
+            a {
+                color: var(--link-color);
+                text-decoration: none;
+            }
+            a:visited{
+                color: var(--clicked-link-color);
+            }
+            a:active {
+                color: var(--clicked-link-color);
+            }
+
+            body {
+                background-color: var(--default-bg-color);
+                color: var(--default-text-color);
+                font-family: "Ubuntu", sans-serif;
+            }
+
+            a:hover {
+                font-style: underline;
+            }
+            
+            ul.members-list {
+                list-style-type: square;
+            }
+            
+            .header-centered {
+                display: flex;
+                justify-content: center;
+            }
+
+            ul.members-list > li {
+                margin: 10px 0px;
+            }
+            
+            ul.members-list > li > p {
+                font-weight: bold;
+                margin: 0px;
+            }
+
+            ul.members-list > li > div {
+                font-size: 0.8em;
+                margin: 0px;
+            }
+            
+            .horizantal-list{
+                
+            }
+        </style>
     </head>
     <body>
-        <h1>Welcome To The Official Natick Highschool Coding Club Frontpage!</h1>
-        <nav>
-            <div>
-                <h2>About Us</h2> <!--This should lead to our index-->
-                <p>
+        <div class="header-centered">
+            <h1>Welcome To The Official Natick Highschool Coding Club Frontpage!</h1>
+            <nav>
+                <ul class="site-header horizontal-list">
                     
-                </p>
-            </div>
-            <div>
-                <h2>Projects</h2>
-                <ul>
-                    <li>
-                        <p>This website</p>
-                    </li>
-                    <li>
-                    <p>Ease of life minecraft mod</p>
-                    </li>
+                    <li><a href="./index.html">About Us</a>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contacts</a></li>
                 </ul>
-            </div>
-            <div>
-                <h2>Contact</h2>
-            </div>
-        </nav>
+            </nav>
+        </div>
         <article>
             <div>The Natick Highschool Computer Science Club is a community of people passionate about coding at Natick High School, located in Natick, Ma.
             The club helps coders come together to design meaningful projects and support other students in learning code.</div>
             <h1>It's members include:</h1>
-            <ul><!--Insert your name here (and github if you want)!-->
-                <li>Venkadesh Eswaranandam
-                    <div class="github"><a href="https://github.com/TinyTinfoil">Github</a>
-                </div></li>
+            <ul class="members-list"><!--Insert your name here (and github if you want)!-->
                 <li>
-                    <!--placeholder-->
+                    <p>Venkadesh Eswaranandam</p>
+                    <div class="github"><a href="https://github.com/TinyTinfoil">GitHub: TinyTinfoil</a></div>
                 </li>
+                <li>
+                    <p>Joseph Huber</p>
+                    <div class="github"><a href="https://github.com/SciDev5">GitHub: SciDev5</a></div>
+                </li>
+                <li>
+                    <p>Lior Carmeli</p>
+                    <div class="github"><a href="https://github.com/GameHunter101">GitHub: GameHunter101</a></div>
+                </li>
+                <li>
+                    <p>Theo Topoloff</p>
+                    <div class="github"><a href="https://github.com/Maimunaki">Github: Maimunaki</a></div>
+                </li>
+                <li>
+                    <p>Om Sharma</p>
+                    <div class="github"><a href="https://github.com/Aapuji">Github: Aapuji</a></div>
+                </li>
+                
             </ul>
         </article>
         <footer>&copy Natick Highschool Computer Science Club</footer>
