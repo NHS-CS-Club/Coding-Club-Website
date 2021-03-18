@@ -18,6 +18,12 @@ h6 {
   --link-color: #4376e6;
   --clicked-link-color: #453fa0;
 }
+@media (prefers-color-scheme: light) {
+  :root {
+    --default-text-color: #1f1f1f;
+    --default-bg-color: #c4d3f5;
+  }
+}
 
 nav ul {
   font-family: Arial /*Whatev you want*/;
@@ -76,7 +82,4 @@ ul.members-list > li > p {
 ul.members-list > li > div {
   font-size: 0.8em;
   margin: 0px;
-}
-
-.horizantal-list {
 }
