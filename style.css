@@ -1,77 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Recursive&family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Recursive&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway", sans-serif;
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
 }
 
-:root{
-    --default-text-color: #d3d3d3;
-    --default-bg-color: #282a2e;
-    --link-color: #4376e6;
-    --clicked-link-color: #453fa0;
+:root {
+  --default-text-color: #d3d3d3;
+  --default-bg-color: #282a2e;
+  --link-color: #4376e6;
+  --clicked-link-color: #453fa0;
 }
 
 nav ul {
-    font-family: Arial/*Whatev you want*/;
-    padding: 0;
-    font-weight: bold;
-    float: left;
-
+  font-family: Arial /*Whatev you want*/;
+  padding: 0;
+  font-weight: bold;
 }
 
-ul.horizontal-list > li > a {
-    display: inline;
-    margin-right: 20px;
+ul.horizontal-list {
+  display: flex;
+  margin-right: 20px;
+  list-style-type: none;
+}
+ul.horizontal-list > li {
+  margin: auto;
 }
 
 a {
-    color: var(--link-color);
-    text-decoration: none;
+  color: var(--link-color);
+  text-decoration: none;
 }
-a:visited{
-    color: var(--clicked-link-color);
+a:visited {
+  color: var(--clicked-link-color);
 }
 a:active {
-    color: var(--clicked-link-color);
+  color: var(--clicked-link-color);
 }
 
 body {
-    background-color: var(--default-bg-color);
-    color: var(--default-text-color);
-    font-family: "Ubuntu", sans-serif;
+  background-color: var(--default-bg-color);
+  color: var(--default-text-color);
+  font-family: "Ubuntu", sans-serif;
 }
 
 a:hover {
-    font-style: underline;
+  font-style: underline;
 }
 
 ul.members-list {
-    list-style-type: square;
+  list-style-type: square;
 }
 
-.header-centered {
-    display: flex;
-    justify-content: center;
+.header {
+  justify-content: center;
+  text-align: center;
 }
 
 ul.members-list > li {
-    margin: 10px 0px;
+  margin: 10px 0px;
 }
 
 ul.members-list > li > p {
-    font-weight: bold;
-    margin: 0px;
+  font-weight: bold;
+  margin: 0px;
 }
 
 ul.members-list > li > div {
-    font-size: 0.8em;
-    margin: 0px;
+  font-size: 0.8em;
+  margin: 0px;
 }
 
-.horizantal-list{
-
+.horizantal-list {
 }
