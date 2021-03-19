@@ -18,7 +18,7 @@ Rules for contributing to this project.  Only members of the NHS CS Club are all
 6. Merge the branch
 7. Delete the branch when it is safe
 
-### Syntatical and Styling Rules
+## Syntatical and Styling Rules
 
 * Make sure all commits and pull requests have a description
 * For css, please put spaces between the selectors.  ie:
