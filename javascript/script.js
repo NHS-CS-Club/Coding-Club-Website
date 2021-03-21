@@ -10,4 +10,4 @@
 Its supposed to highlight the current url's link.   I think it is because the remote link doesn't work, but I don't want to download anything to the folder.
 
 Doesn't work*/
-console.log('Hi');
+console.log('Hi, this doesn\'t work');
