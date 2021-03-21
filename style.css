@@ -17,6 +17,7 @@ h6 {
   --default-bg-color: #282a2e;
   --link-color: #4376e6;
   --clicked-link-color: #453fa0;
+  --current-url-color: #4376e6;
 }
 @media (prefers-color-scheme: light) {
   :root {
