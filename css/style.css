@@ -26,10 +26,18 @@ h6 {
   }
 }
 
+body {
+  background-color: var(--default-bg-color);
+  color: var(--default-text-color);
+  font-family: "Ubuntu", sans-serif;
+}
+
 nav ul {
   font-family: Arial /*Whatev you want*/;
   padding: 0;
   font-weight: bold;
+  display: flex;
+  justify-content: space-around;
 }
 
 ul.horizontal-list {
@@ -37,26 +45,24 @@ ul.horizontal-list {
   margin-right: 20px;
   list-style-type: none;
 }
+
 ul.horizontal-list > li {
-  margin: auto;
+  /*margin: auto;*/
 }
 
 a {
   color: var(--link-color);
   text-decoration: none;
 }
+
 a:visited {
   color: var(--clicked-link-color);
 }
+
 a:active {
   color: var(--clicked-link-color);
 }
 
-body {
-  background-color: var(--default-bg-color);
-  color: var(--default-text-color);
-  font-family: "Ubuntu", sans-serif;
-}
 
 a:hover {
   font-style: underline;
@@ -67,6 +73,7 @@ ul.members-list {
 }
 
 .header {
+  display: flex;
   justify-content: center;
   text-align: center;
 }
