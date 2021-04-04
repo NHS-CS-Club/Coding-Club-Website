@@ -19,10 +19,13 @@ h6 {
   --clicked-link-color: #453fa0;
   --current-url-color: #4376e6;
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     --default-text-color: #1f1f1f;
     --default-bg-color: #c4d3f5;
+    /*--default-bg-color: #f7f5f5;    Try to use a more whitish color because I can't rly think of a good navbar color to ft that blueish one*/
+
   }
 }
 
@@ -90,4 +93,9 @@ ul.members-list > li > p {
 ul.members-list > li > div {
   font-size: 0.8em;
   margin: 0px;
+}
+
+footer {
+  display: flex;
+  align-self: flex-end;
 }
