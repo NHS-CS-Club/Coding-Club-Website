@@ -47,7 +47,7 @@ ul.horizontal-list {
 }
 
 ul.horizontal-list > li {
-  /*margin: auto;*/
+  margin: auto;
 }
 
 a {
