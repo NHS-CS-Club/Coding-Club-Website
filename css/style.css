@@ -72,7 +72,7 @@ ul.members-list {
   list-style-type: square;
 }
 
-.header {
+header {
   display: flex;
   justify-content: center;
   text-align: center;
