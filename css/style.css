@@ -32,7 +32,7 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-nav ul {
+nav ul.site-header.site-nav-list {
   font-family: Arial /*Whatev you want*/;
   padding: 0;
   font-weight: bold;
