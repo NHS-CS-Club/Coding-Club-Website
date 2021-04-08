@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Recursive&family=Roboto+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 
 h1,
@@ -25,7 +24,6 @@ h6 {
     --default-text-color: #1f1f1f;
     --default-bg-color: #c4d3f5;
     /*--default-bg-color: #f7f5f5;    Try to use a more whitish color because I can't rly think of a good navbar color to ft that blueish one*/
-
   }
 }
 
@@ -66,13 +64,12 @@ a:active {
   color: var(--clicked-link-color);
 }
 
-
 a:hover {
   font-style: underline;
 }
 
 ul.members-list {
-  list-style-type: square;
+  list-style-type: none;
 }
 
 header {
@@ -88,6 +85,7 @@ ul.members-list > li {
 ul.members-list > li > p {
   font-weight: bold;
   margin: 0px;
+  display: inline-block;
 }
 
 ul.members-list > li > div {
@@ -103,4 +101,11 @@ footer {
 article.normal-alignment {
   text-align: center;
   margin: 0.25vw;
+}
+.github > a {
+  content: url(../images/github.png);
+  height: 1.5em;
+}
+.github {
+  display: inline-block;
 }
