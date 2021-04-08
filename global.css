@@ -99,3 +99,8 @@ footer {
   display: flex;
   align-self: flex-end;
 }
+
+article.normal-alignment {
+  text-align: center;
+  margin: 0.25vw;
+}
