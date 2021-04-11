@@ -4,6 +4,18 @@
             <meta charset="UTF-8">
             <title>NHS Coding Club | About Us</title>
             <link rel="stylesheet" href="./css/style.css">
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script type="text/javascript">
+                window.onload = function() {
+                   if (window.jQuery) {  
+                       // jQuery is loaded  
+                       console.log('Working');
+                   } else {
+                       console.log('Not yet');
+                    location.reload();
+                   }
+                }
+            </script>
         </head>
         <body>
             <article>
