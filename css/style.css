@@ -17,12 +17,18 @@ h6 {
   --link-color: #4376e6;
   --clicked-link-color: #453fa0;
   --current-url-color: #4376e6;
+  --light-border-line: #252525;
+  --nav-bar-color: #111111;
+  --footer-bar-color: #111111;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --default-text-color: #1f1f1f;
-    --default-bg-color: #c4d3f5;
+    --default-bg-color: #ffffff;
+    --light-border-line: #e4e4e4;
+    --nav-bar-color: #f7f7f7;
+    --footer-bar-color: #f7f7f7;
     /*--default-bg-color: #f7f5f5;    Try to use a more whitish color because I can't rly think of a good navbar color to ft that blueish one*/
   }
 }
@@ -31,25 +37,36 @@ body {
   background-color: var(--default-bg-color);
   color: var(--default-text-color);
   font-family: "Ubuntu", sans-serif;
+  margin: 0px;
 }
 
-nav ul.site-header.site-nav-list {
+nav {
+  background-color: var(--nav-bar-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+  border: 1px solid #e4e4e4;
+  border-width: 1px 0px;
+}
+
+nav ul {
   font-family: Arial /*Whatev you want*/;
   padding: 0;
   font-weight: bold;
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 ul.horizontal-list {
   display: flex;
   margin-right: 20px;
   list-style-type: none;
+  justify-content: space-evenly;
 }
 
-ul.horizontal-list > li {
-  margin: auto;
-}
 
 a {
   color: var(--link-color);
@@ -76,6 +93,7 @@ header {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding: 10px;
 }
 
 ul.members-list > li {
@@ -89,23 +107,30 @@ ul.members-list > li > p {
 }
 
 ul.members-list > li > div {
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin: 0px;
 }
 
 footer {
   display: flex;
   align-self: flex-end;
+  background-color: var(--footer-bar-color);
+  border: 1px solid #e4e4e4;
+  border-width: 1px 0px 0px 0px;
+  padding: 10px;
+  text-align: center;
 }
 
-article.normal-alignment {
+article.normal-aligment {
   text-align: center;
-  margin: 0.25vw;
+  margin: 0.28vw;
 }
+
 .github > a {
   content: url(../images/github.png);
   height: 1.5em;
 }
+
 .github {
   display: inline-block;
 }
