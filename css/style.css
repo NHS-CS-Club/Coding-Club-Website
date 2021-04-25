@@ -47,12 +47,12 @@ nav {
   justify-content: space-evenly;
   position: sticky;
   top: 0;
-  border: 1px solid #e4e4e4;
+  border: 1px solid var(--light-border-line);
   border-width: 1px 0px;
 }
 
 nav ul {
-  font-family: Arial /*Whatev you want*/;
+  font-family: inherit /*Whatev you want*/;
   padding: 0;
   font-weight: bold;
   display: flex;
@@ -113,17 +113,17 @@ ul.members-list > li > div {
 
 footer {
   display: flex;
-  align-self: flex-end;
+  justify-content: center;
   background-color: var(--footer-bar-color);
-  border: 1px solid #e4e4e4;
+  border: 1px solid var(--light-border-line);
   border-width: 1px 0px 0px 0px;
   padding: 10px;
   text-align: center;
 }
 
-article.normal-aligment {
+article {
   text-align: center;
-  margin: 0.28vw;
+  margin: 10px;
 }
 
 .github > a {
