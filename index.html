@@ -18,9 +18,9 @@
             window.onload = function() {
                if (window.jQuery) {  
                    // jQuery is loaded  
-                   console.log('Working');
+                   console.log('jQuery: Working');
                } else {
-                   console.log('Not yet');
+                   console.log('jQuery: Undefined');
                 location.reload();
                }
             }
@@ -28,19 +28,19 @@
     </head>
     <body>
         <header>
-            <h1>Welcome To The Official Natick High School Coding Club Frontpage!</h1>
+            <h1>Welcome to the <span class="word-emphasis">Official</span> <span class="header-club-name">Natick High School Coding Club</span> Frontpage!</h1>
         </header>
         <nav>
-            <ul class="site-header horizontal-list site-nav-list navbar" onload="highlightCurrentLink();">
+            <ul class="site-header horizontal-list site-nav-list navbar">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about_us.html">About Us</a>
                 <li><a href="./projects.html">Projects</a></li>
             </ul>
         </nav>
-        <article id="aboutus" class="normal-alignment">
-            The Natick High School Computer Science Club is a community of people passionate about coding at Natick High School, located in Natick, MA.
+        <article id="aboutus-brief">
+            The Natick High School Computer Science Club is a community of people passionate about coding at Natick High School; located in Natick, MA.
             The club helps coders come together to design meaningful projects and support other students in learning code.
         </article>
-        <footer>Natick High School Computer Science Club &copy</footer>
+        <footer>Natick High School Computer Science Club &copy2021</footer>
     </body>
 </html>
