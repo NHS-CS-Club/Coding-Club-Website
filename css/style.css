@@ -38,6 +38,7 @@ body {
   color: var(--default-text-color);
   font-family: "Ubuntu", sans-serif;
   margin: 0px;
+  overflow-y: scroll;
 }
 
 nav {
