@@ -1,55 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NHSCC | Projects</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-    </style>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <style></style>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
     <script type="text/javascript">
-        window.onload = function() {
-           if (window.jQuery) {  
-               // jQuery is loaded  
-               console.log('Working');
-           } else {
-               console.log('Not yet');
-            location.reload();
-           }
+      window.onload = function() {
+        if (window.jQuery) {
+          // jQuery is loaded
+          console.log("Working");
+        } else {
+          console.log("Not yet");
+          location.reload();
         }
+      };
     </script>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <!--Welcome to the <span class="word-emphasis">Official</span> <span class="header-club-name">Natick High School Coding Club</span> Frontpage!-->
+        <!-- ^^^ That or this (below)? -->
+        Projects
+      </h1>
+    </header>
     <nav>
-        <ul class="site-header horizontal-list site-nav-list">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about_us.html">About Us</a>
-            <li><a href="./projects.html">Projects</a></li>
-        </ul>
+      <ul class="site-header horizontal-list site-nav-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about_us.html">About Us</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+      </ul>
     </nav>
     <article id="aboutus">
-        <div class="projects">
-            <div class="image">
-                <a href="#"><img src="#" alt=""></a>
-            </div> <!--image div-->
-            <div class="text">
-                This was the first project we created. The program is given an array of integers and is then tasked with determining whether to output "Fizz", "Buzz", "FizzBuzz",
-                or nothing at all.
-            </div> <!--text class div-->
-        </div> <!--Projects Div-->
-        <div class="projects">
-            <div class="image">
-                <a href="#"><img src="#" alt=""></a>
-            </div> <!--image div-->
-            <div class="text">
-                This was a hangman project we created. The program works by asking the user for how many lives they would like to have. After that, the computer randomly
-                generates a number and that number is then used as the index of an element in the json file. Whatever the word is at the index, that is the word the user 
-                has to try and guess.
-            </div> <!--text class div--> 
+      <div class="projects">
+        <div class="image">
+          <a href="#"><img src="#" alt=""/></a>
         </div>
+      
+      <div class="projects">
+        <div class="image">
+          <a href="#"><img src="#" alt=""/></a>
+        </div>
+        <!--image div-->
+        <h2>Environment game</h2>
+        <div class="text">
+        </div>
+        <!--text class div-->
+      </div>
+      <div class="projects">
+        <div class="image">
+          <a href="#"><img src="#" alt=""/></a>
+        </div>
+        <!--image div-->
+        <h2>Recyclables finder</h2>
+        <div class="text">
+        </div>
+        <!--text class div-->
+      </div>
+        <div class="projects">
+        <div class="image">
+          <a href="#"><img src="#" alt=""/></a>
+        </div>
+        <!--image div-->
+        <h2>Hangman</h2>
+        <div class="text">
+          This was a hangman project we created. The program works by asking the
+          user for how many lives they would like to have. After that, the
+          computer randomly generates a number, that number is then used as the
+          index of an element in the json file. Whatever the word is at the
+          index, that is the word the user has to try and guess .
+        </div>
+        <!--text class div-->
+      </div>
+        <h2>FizzBuzz</h2>
+        <div class="text">
+          This was the first project we created. The program is given an array
+          of integers and is then tasked with determining whether to output
+          "Fizz", "Buzz", "FizzBuzz", or nothing at all.
+        </div>
+        <!--text class div-->
+      </div>
+      <!--Projects Div-->
+      
+      
+      <div class="projects">
+        <div class="image">
+          <a href="#"><img src="#" alt=""/></a>
+        </div>
+        <!--image div-->
+        <h2>Prime Number Finder</h2>
+        <div class="text">
+        </div>
+        <!--text class div-->
+      </div>
+      
+      <div class="projects">
+        <div class="image">
+          <a href="#"><img src="#" alt=""/></a>
+        </div>
+        <!--image div-->
+        <h2>Minecraft Helper Mod [ProjectEZ]</h2>
+        <div class="text">
+          <a href="https://github.com/NHS-CS-Club/Project-E.Z/releases/tag/1.0.0">Release 1.0.0</a>
+        </div>
+        <!--text class div-->
+      </div>
+      
     </article>
-    <footer>Natick High School Computer Science Club &copy</footer>
-</body>
+    <footer>Natick High School Computer Science2021 Club &copy</footer>
+  </body>
 </html>

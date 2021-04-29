@@ -14,8 +14,9 @@ h6 {
 :root {
   --default-text-color: #d3d3d3;
   --default-bg-color: #282a2e;
-  --link-color: #4376e6;
-  --clicked-link-color: #453fa0;
+  --link-color: #7878cc;
+  --clicked-link-color: var(--link-color);
+  /* Other clicked link color option: grey*/
   --current-url-color: #4376e6;
   --light-border-line: #252525;
   --nav-bar-color: #111111;
@@ -27,18 +28,19 @@ h6 {
     --default-text-color: #1f1f1f;
     --default-bg-color: #ffffff;
     --light-border-line: #e4e4e4;
-    --nav-bar-color: #f7f7f7;
+    --nav-bar-color: #fdfdfd;
     --footer-bar-color: #f7f7f7;
     /*--default-bg-color: #f7f5f5;    Try to use a more whitish color because I can't rly think of a good navbar color to ft that blueish one*/
   }
 }
 
 body {
-  background-color: var(--default-bg-color);
-  color: var(--default-text-color);
-  font-family: "Ubuntu", sans-serif;
-  margin: 0px;
-  overflow-y: scroll;
+    background-color: var(--default-bg-color);
+    color: var(--default-text-color);
+    font-family: "Ubuntu", sans-serif;
+    margin: 0px;
+    position: absolute;
+    min-height: 100%;
 }
 
 nav {
@@ -83,7 +85,7 @@ a:active {
 }
 
 a:hover {
-  font-style: underline;
+  text-decoration: 1px solid underline;
 }
 
 ul.members-list {
@@ -117,17 +119,20 @@ ul.members-list > li > div {
 }
 
 .aboutus .content {
-  
+  background-color: grey;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  background-color: var(--footer-bar-color);
-  border: 1px solid var(--light-border-line);
-  border-width: 1px 0px 0px 0px;
-  padding: 10px;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--footer-bar-color);
+    border: 1px solid var(--light-border-line);
+    border-width: 1px 0px 0px 0px;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
 }
 
 article {
@@ -136,7 +141,7 @@ article {
 }
 
 .github > a {
-  content: url(../images/github.png);
+  content: url(https://cdn.glitch.com/805d064f-f1f7-4e20-81da-fcd4df0d84a5%2Fgithub.png?v=1619726719590);
   height: 1.5em;
 }
 
