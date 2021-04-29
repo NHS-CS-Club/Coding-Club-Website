@@ -111,6 +111,14 @@ ul.members-list > li > div {
   margin: 0px;
 }
 
+.aboutus div.container {
+  background-image: /*A cool picture*/;
+}
+
+.aboutus .content {
+  
+}
+
 footer {
   display: flex;
   justify-content: center;
