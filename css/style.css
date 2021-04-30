@@ -128,6 +128,7 @@ ul.members-list > li > div {
   height: 100%;
   padding: 10px;
   border-radius: 5px;
+  float: right;
 }
 
 footer {
