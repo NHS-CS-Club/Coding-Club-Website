@@ -114,12 +114,20 @@ ul.members-list > li > div {
   margin: 0px;
 }
 
-.aboutus div.container {
-  background-image: /*A cool picture*/;
+#aboutus {
+  /*background-image: A cool picture;*/
+  /*Placeholder: */
+  background-color: black;
+  width: 100vw;
+  height: 1000px;
 }
 
-.aboutus .content {
+#aboutus .content {
   background-color: grey;
+  width: 250px;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 footer {
