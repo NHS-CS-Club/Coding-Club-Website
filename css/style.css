@@ -11,16 +11,21 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --default-text-color: #d3d3d3;
-  --default-bg-color: #282a2e;
+  --default-bg-color: hsl(217,18%,15%);
   --link-color: #7878cc;
   --clicked-link-color: var(--link-color);
   /* Other clicked link color option: grey*/
   --current-url-color: #4376e6;
   --light-border-line: #252525;
-  --nav-bar-color: #111111;
-  --footer-bar-color: #111111;
+  --nav-bar-color: hsla(217,42%,18%,50%);
+  --footer-bar-color: #22282d;
+  --content-color: hsl(220,26%,15%);
 }
 
 @media (prefers-color-scheme: light) {
@@ -30,7 +35,7 @@ h6 {
     --light-border-line: #e4e4e4;
     --nav-bar-color: #fdfdfd;
     --footer-bar-color: #f7f7f7;
-    /*--default-bg-color: #f7f5f5;    Try to use a more whitish color because I can't rly think of a good navbar color to ft that blueish one*/
+    --content-color: ;/* Can you add the previous content color here pls.  Thx */
   }
 }
 
@@ -41,6 +46,7 @@ body {
     margin: 0px;
     position: absolute;
     min-height: 100%;
+    width: 100%;
 }
 
 nav {
@@ -50,8 +56,7 @@ nav {
   justify-content: space-evenly;
   position: sticky;
   top: 0;
-  border: 1px solid var(--light-border-line);
-  border-width: 1px 0px;
+  border-bottom: 1px solid var(--light-border-line);
 }
 
 nav ul {
@@ -97,6 +102,7 @@ header {
   justify-content: center;
   text-align: center;
   padding: 10px;
+  border-bottom: 1px solid var(--light-border-line);
 }
 
 ul.members-list > li {
@@ -117,18 +123,16 @@ ul.members-list > li > div {
 #aboutus {
   /*background-image: A cool picture;*/
   /*Placeholder: */
-  background-color: black;
-  width: 100vw;
-  height: 1000px;
+  background-color: var(--background-color);
 }
 
 #aboutus .content {
-  background-color: grey;
+  background-color: var(--content-color); 
   width: 250px;
   height: 100%;
   padding: 10px;
   border-radius: 5px;
-  float: right;
+  margin: 0px calc(50% - 250px / 2);
 }
 
 footer {
@@ -147,10 +151,12 @@ footer {
 article {
   text-align: center;
   margin: 10px;
+  width: calc(100% - 20px);
+  margin-bottom: 60px;
 }
 
 .github > a {
-  content: url(https://cdn.glitch.com/805d064f-f1f7-4e20-81da-fcd4df0d84a5%2Fgithub.png?v=1619726719590);
+  content: url(https://github.com/NHS-CS-Club);
   height: 1.5em;
 }
 
