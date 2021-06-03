@@ -35,7 +35,7 @@ h6 {
     --light-border-line: #e4e4e4;
     --nav-bar-color: #fdfdfd;
     --footer-bar-color: #f7f7f7;
-    --content-color: ;/* Can you add the previous content color here pls.  Thx */
+    --content-color: hsl(220,26%,15%);/* Can you add the previous content color here pls.  Thx */
   }
 }
 
@@ -74,7 +74,6 @@ ul.horizontal-list {
   list-style-type: none;
   justify-content: space-evenly;
 }
-
 
 a {
   color: var(--link-color);
@@ -128,11 +127,11 @@ ul.members-list > li > div {
 
 #aboutus .content {
   background-color: var(--content-color); 
-  width: 250px;
+  width: 80%;
   height: 100%;
   padding: 10px;
   border-radius: 5px;
-  margin: 0px calc(50% - 250px / 2);
+  margin:auto;
 }
 
 footer {
@@ -160,6 +159,9 @@ article {
   height: 1.5em;
 }
 
-.github {
-  display: inline-block;
+.github::before {
+  display: inline;
+  content: url("https://cdn.glitch.com/805d064f-f1f7-4e20-81da-fcd4df0d84a5%2Fgithub.png?v=1619726719590");
+  height: 1px;
+  width:1px;
 }
