@@ -17,15 +17,15 @@ h6 {
 
 :root {
   --default-text-color: #d3d3d3;
-  --default-bg-color: hsl(217,18%,15%);
+  --default-bg-color: hsl(217, 18%, 15%);
   --link-color: #7878cc;
   --clicked-link-color: var(--link-color);
   /* Other clicked link color option: grey*/
   --current-url-color: #4376e6;
   --light-border-line: #252525;
-  --nav-bar-color: hsla(217,42%,18%,50%);
+  --nav-bar-color: hsla(217, 42%, 18%, 50%);
   --footer-bar-color: #22282d;
-  --content-color: hsl(220,26%,15%);
+  --content-color: hsl(220, 26%, 15%);
 }
 
 @media (prefers-color-scheme: light) {
@@ -35,18 +35,22 @@ h6 {
     --light-border-line: #e4e4e4;
     --nav-bar-color: #fdfdfd;
     --footer-bar-color: #f7f7f7;
-    --content-color: hsl(220,26%,15%);/* Can you add the previous content color here pls.  Thx */
+    --content-color: hsl(
+      220,
+      26%,
+      15%
+    ); /* Can you add the previous content color here pls.  Thx */
   }
 }
 
 body {
-    background-color: var(--default-bg-color);
-    color: var(--default-text-color);
-    font-family: "Ubuntu", sans-serif;
-    margin: 0px;
-    position: absolute;
-    min-height: 100%;
-    width: 100%;
+  background-color: var(--default-bg-color);
+  color: var(--default-text-color);
+  font-family: "Ubuntu", sans-serif;
+  margin: 0px;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
 }
 
 nav {
@@ -96,6 +100,14 @@ ul.members-list {
   list-style-type: none;
 }
 
+.container {
+  display: flex;
+}
+
+.white {
+  color: white;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -122,29 +134,42 @@ ul.members-list > li > div {
 #aboutus {
   /*background-image: A cool picture;*/
   /*Placeholder: */
-  background-color: var(--background-color);
+  background-color: blue/* <- Placeholder  var(--background-color)*/;
+  /* :placeholdeR*/
+  height: 100vh; /* You know that this is supposed to be rather large.  If you want to change it, thats fine, 
+  just make sure it is somewhat big as it is what draws attention to the home page.*/
+  margin: auto;
 }
 
-#aboutus .content {
-  background-color: var(--content-color); 
+#aboutus .heroimg-content {
+  background-color: var(--content-color);
   width: 80%;
   height: 100%;
   padding: 10px;
   border-radius: 5px;
-  margin:auto;
+  /*margin-left: px;*/
+}
+
+#aboutus .heroimg-info {
+  /*This contains it, that is just the text I believe*/
+  margin: 10% auto auto 80px;
+}
+
+#heroimg-info {
+  width: 400px;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    background-color: var(--footer-bar-color);
-    border: 1px solid var(--light-border-line);
-    border-width: 1px 0px 0px 0px;
-    padding: 10px;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--footer-bar-color);
+  border: 1px solid var(--light-border-line);
+  border-width: 1px 0px 0px 0px;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
 }
 
 article {
@@ -155,13 +180,17 @@ article {
 }
 
 .github > a {
-  content: url(https://github.com/NHS-CS-Club);
   height: 1.5em;
+  display:inline-block;
 }
 
-.github::before {
-  display: inline;
-  content: url("https://cdn.glitch.com/805d064f-f1f7-4e20-81da-fcd4df0d84a5%2Fgithub.png?v=1619726719590");
-  height: 1px;
-  width:1px;
+.github > a::before {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  /*   margin-right: 5px; */
+  content: "";
+  background: url("https://cdn.glitch.com/805d064f-f1f7-4e20-81da-fcd4df0d84a5%2Fgithub.png?v=1619726719590")
+    no-repeat 0 0;
+  background-size: 100%;
 }
