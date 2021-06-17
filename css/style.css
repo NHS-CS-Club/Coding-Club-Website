@@ -134,7 +134,7 @@ ul.members-list > li > div {
 #aboutus {
   /*background-image: A cool picture;*/
   /*Placeholder: */
-  background-color: blue/* <- Placeholder  var(--background-color)*/;
+  background-image: url("https://p11cdn4static.sharpschool.com/UserFiles/Servers/Server_121391/Templates/nhs-pa.jpg")/* <- Placeholder  var(--background-color)*/;
   /* :placeholdeR*/
   height: 100vh; /* You know that this is supposed to be rather large.  If you want to change it, thats fine, 
   just make sure it is somewhat big as it is what draws attention to the home page.*/
@@ -190,7 +190,7 @@ article {
   height: 1em;
   /*   margin-right: 5px; */
   content: "";
-  background: url("https://cdn.glitch.com/805d064f-f1f7-4e20-81da-fcd4df0d84a5%2Fgithub.png?v=1619726719590")
+  background: url("../images/github.png")
     no-repeat 0 0;
   background-size: 100%;
 }
