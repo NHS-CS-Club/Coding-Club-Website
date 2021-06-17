@@ -147,7 +147,7 @@ ul.members-list > li > div {
   height: 100%;
   padding: 10px;
   border-radius: 5px;
-  /*margin-left: px;*/
+  margin: 2em;
 }
 
 #aboutus .heroimg-info {
@@ -156,7 +156,7 @@ ul.members-list > li > div {
 }
 
 #heroimg-info {
-  width: 400px;
+  width: 50%;
 }
 
 footer {
